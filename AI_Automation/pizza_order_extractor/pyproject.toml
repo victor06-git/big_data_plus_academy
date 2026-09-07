@@ -1,0 +1,25 @@
+[project]
+name = "pizza-order-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "victor06-git", email = "asensiovector@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.43.89",
+    "dotenv>=0.9.9",
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.0",
+    "langchain-aws>=1.7.5",
+    "langchain-community>=0.4.2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+pizza-order-extractor = "pizza_order_extractor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
